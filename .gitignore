@@ -1,0 +1,132 @@
+# ====================================================================
+# GIT IGNORE FILE - Sentinel Finance
+# ====================================================================
+# Files that should NOT be committed to version control
+# ====================================================================
+
+# Windows system files
+Thumbs.db
+Thumbs.db:encryptable
+ehthumbs.db
+ehthumbs_vista.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Environment variables
+.env
+.env.local
+.env.*.local
+
+# Virtual environments
+venv/
+env/
+ENV/
+.venv/
+virtualenv/
+
+# Python
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# IDE
+.vscode/
+.vs/
+.idea/
+*.user
+*.userosscache
+*.sln.docuser
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
+
+# Executables and binary installers
+*.exe
+*.msi
+*.msm
+*.msp
+
+# Logs
+logs/
+*.log
+execution_challenges.log
+.ipython/
+
+# Database
+*.db
+*.sqlite
+*.sqlite3
+postgres/
+pgadmin/
+
+# Testing
+.pytest_cache/
+.coverage
+htmlcov/
+.tox/
+.hypothesis/
+
+# Temporary files
+*.tmp
+temp/
+tmp/
+
+# IDE-specific files
+.vscode/settings.json
+.vscode/launch.json
+.idea/workspace.xml
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit cache
+.streamlit/cache/
+
+# Package lock files (optional - uncomment based on your preference)
+# poetry.lock
+# Pipfile.lock
+
+# ====================================================================
+# EXCEPTIONS (files that should be committed)
+# ====================================================================
+!.env.example          # Include template for environment setup
+!.github/              # Include workflow definitions
+!requirements.txt      # Include dependency specifications
+!README.md             # Include documentation
+
+# ====================================================================
+# NOTES
+# ====================================================================
+#
+# .env files:
+#   Never commit actual .env with real credentials
+#   Always commit .env.example as a template
+#
+# logs/ directory:
+#   Runtime logs are excluded to keep repo clean
+#   Check logs/ locally during development
+#
+# Virtual environments:
+#   Excluded because they're large and environment-specific
+#   Recreate with: python -m venv venv && pip install -r requirements.txt
+#
+# ====================================================================
