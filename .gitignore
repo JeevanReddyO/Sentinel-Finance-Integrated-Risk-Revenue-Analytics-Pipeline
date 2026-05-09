@@ -105,28 +105,9 @@ Thumbs.db
 # poetry.lock
 # Pipfile.lock
 
-# ====================================================================
 # EXCEPTIONS (files that should be committed)
-# ====================================================================
 !.env.example          # Include template for environment setup
 !.github/              # Include workflow definitions
 !requirements.txt      # Include dependency specifications
 !README.md             # Include documentation
 
-# ====================================================================
-# NOTES
-# ====================================================================
-#
-# .env files:
-#   Never commit actual .env with real credentials
-#   Always commit .env.example as a template
-#
-# logs/ directory:
-#   Runtime logs are excluded to keep repo clean
-#   Check logs/ locally during development
-#
-# Virtual environments:
-#   Excluded because they're large and environment-specific
-#   Recreate with: python -m venv venv && pip install -r requirements.txt
-#
-# ====================================================================
